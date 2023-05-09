@@ -1,0 +1,59 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wykres temperatury</title>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<style>
+		canvas {
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+		}
+	</style>
+</head>
+<body>
+
+<!-- Wykres temperatury -->
+<div style="width: 75%;">
+	<canvas id="myChart"></canvas>
+</div>
+
+<script>
+	var ctx = document.getElementById('myChart').getContext('2d');
+	var chart = new Chart(ctx, {
+		type: 'line',
+		data: {
+			labels: [
+				{% for x in myesp %}
+					"{{ x.id }}",
+				{% endfor %}
+			],
+			datasets: [{
+				label: 'Temperatura',
+				data: [
+					{% for x in myesp %}
+						"{{ x.temp }}",
+					{% endfor %}
+				],
+				borderColor: 'rgb(255, 99, 132)',
+				backgroundColor: 'rgba(255, 99, 132, 0.2)',
+				fill: true,
+				lineTension: 0.2
+			}]
+		},
+		options: {
+			responsive: true,
+			scales: {
+				yAxes: [{
+					ticks: {
+						beginAtZero: true
+					}
+				}]
+			}
+		}
+	});
+</script>
+</body>
+</html>
