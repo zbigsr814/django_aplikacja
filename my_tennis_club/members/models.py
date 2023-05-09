@@ -9,15 +9,6 @@ class Member(models.Model):
   def __str__(self):
     return f"{self.firstname} {self.lastname}"
   
-# class esp(models.Model):
-#   date = models.DateField()
-#   time = models.TimeField()
-#   temp = models.CharField(max_length=255)
-#   light = models.CharField(max_length=255)
-
-#   class Meta:
-#     abstract = True
-
 class esp2(models.Model):
   date = models.DateField()
   time = models.TimeField()

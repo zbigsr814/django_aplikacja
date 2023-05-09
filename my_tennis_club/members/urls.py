@@ -9,4 +9,5 @@ urlpatterns = [
     path('menu/', views.menu, name='menu'),
     path('menu/tchart/', views.tchart, name='tchart'),
     path('menu/lchart/', views.lchart, name='lchart'),
+    path('menu/stat/', views.stat, name='stat'),
 ]

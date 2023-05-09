@@ -2,12 +2,20 @@
 
 {% block content %}
     {% if chart %}
-        <div style="display: flex; justify-content: space-between;">
+        <div style="display: flex; justify-content: left;">
             <img src="data:image/png;base64, {{chart|safe}}"/>
-            <div style="margin-right: 500px;margin-top: 100px;">
-                Korelacja: {{ correlat }}<br>
+            <div style="white-space: nowrap; margin-right: 500px;margin-top: 100px; align-items: center;">
+                Korelacja: {{ correlat }}<br><br>
+
                 Średnia dla ESP1: {{ mn1 }}<br>
-                Średnia dla ESP2: {{ mn2 }}</div>
+                Mediana dla ESP1: {{ med1 }}<br>
+                Moda dla ESP1: {{ mod1 }}<br><br>
+
+                Średnia dla ESP2: {{ mn2 }}<br>
+                Mediana dla ESP2: {{ med2 }}<br>
+                Moda dla ESP2: {{ mod2 }}<br>
+            </div>
+                
             </div>
         </div>
     {% endif %}
