@@ -17,3 +17,5 @@ Następnie za pomocą komendy pip install <pakiet> instalujemy następujące pak
 django, mysqlclient, matplotlib, pandas, whitenoise
   
 Plik projekt.sql który znajduje się w folderze django_aplikacja należy umieścić w bazie danych MySQL(lub innej). Przechodzimy do pliku django_aplikacja/master_project/settings.py w DATABASES ustawiamy login, hasło itd. dla bołączenia z bazą danych.
+
+  
