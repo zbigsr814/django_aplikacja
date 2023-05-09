@@ -11,6 +11,8 @@ Unix/MacOS:
 python -m venv env
 source myworld/bin/activate
 
+Wykonujemy: git clone <adres_github>
+
 Następnie za pomocą komendy pip install <pakiet> instalujemy następujące pakiety:
 django, mysqlclient, matplotlib, pandas, whitenoise
   
