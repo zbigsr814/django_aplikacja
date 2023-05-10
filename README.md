@@ -1,12 +1,14 @@
 # django_aplikacja
-Aplikacja wykorzystująca framework Django. Tworzy stronę internetową na której znajdują się wykresy temperatury i naświetlenia w czasie. Dane są pobierane z bazy danych MySQL. Do wykresów i analityki danych wykorzystano pyplotlib i pandas.
+Aplikacja wykorzystująca framework Django. Tworzy stronę internetową na której znajdują się wykresy temperatury i naświetlenia w czasie oraz dane statystyczne. Dane są pobierane z bazy danych MySQL. Do wykresów i analityki danych wykorzystano pyplotlib i pandas.
 
 URUCHOMIENIE APLIKACJI
 
 W pierwszej kolejności należy utworzyć wirtualne środowisko venv oraz je aktywować:
+
 Windows: 
 python -m venv env
 myworld\Scripts\activate
+
 Unix/MacOS: 
 python -m venv env
 source myworld/bin/activate
