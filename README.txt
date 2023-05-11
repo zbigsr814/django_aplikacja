@@ -4,7 +4,7 @@ Aplikacja wykorzystująca framework Django. Tworzy stronę internetową na któr
 Wykonany projekt jest częścią mojej pracy magisterskiej którą można zobaczyć w folderze django_aplikacja jako: "aktualny stan pracy magisterskiej.docx"
 
 URUCHOMIENIE APLIKACJI
-
+ 
 W pierwszej kolejności należy utworzyć wirtualne środowisko venv oraz je aktywować:
 
 Windows: 
