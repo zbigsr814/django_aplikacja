@@ -6,7 +6,7 @@ Wykonany projekt jest częścią mojej pracy magisterskiej którą można zobacz
 URUCHOMIENIE APLIKACJI
  
 W pierwszej kolejności należy utworzyć wirtualne środowisko venv oraz je aktywować:
-
+ 
 Windows: 
 python -m venv env
 myworld\Scripts\activate
