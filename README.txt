@@ -11,7 +11,7 @@ Windows:
 python -m venv env
 myworld\Scripts\activate
 
-Unix/MacOS: 
+Unix/MacOS:  
 python -m venv env
 source myworld/bin/activate
 
